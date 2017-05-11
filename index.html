@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Number Guesser</title>
+      <link rel="stylesheet" href="styles.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <h1>Number <span>Guesser</span></h1>
+      </header>
+        <section>
+          <form class="try-guess">
+            <div class="min-max-buttons">
+              <input type="textarea" id="min-box" name="minimum-value" placeholder="Enter minimum value"/>
+                <label for="min-box"></label>
+              <input type="textarea" id="max-box" name="maximum-value" placeholder="Enter maximum value"/>
+                <label for="max-box"></label>
+            </div>
+              <input type="textarea" id="guess-box" name="guess" placeholder="Enter your guess"/>
+                <label for="guess-box"></label>
+            <div>
+              <button id="guess-button" type="button">Guess</button>
+                <label for="guess"></label>
+              <button id="clear" type="button">Clear</button>
+                <label for="clear"></label>
+            </div>
+          </form>
+        </section>
+        <section class="guess-response">
+          <p>Your last guess was</p>
+          <p class="num-guess">#</p>
+            <!--return user input here -->
+          <p class="high-low">Hint</p>
+          <!-- too high/too low/correct response here-->
+          <button id="reset">Reset</button>
+          <label for="reset"></label>
+        </section>
+      <script src="scripts.js"></script>
+    </body>
+  </html>
